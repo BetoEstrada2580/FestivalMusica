@@ -4,11 +4,19 @@
   "description": "Proyecto 4",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch scss:build/css"
   },
+  "keywords": [
+    "SASS",
+    "Gulp"
+  ],
   "author": "Jesús Alberto Estrada García",
   "license": "ISC",
   "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.1.0",
     "sass": "^1.48.0"
   },
   "repository": {
@@ -18,5 +26,6 @@
   "bugs": {
     "url": "https://github.com/BetoEstrada2580/FestivalMusica/issues"
   },
-  "homepage": "https://github.com/BetoEstrada2580/FestivalMusica#readme"
+  "homepage": "https://github.com/BetoEstrada2580/FestivalMusica#readme",
+  "dependencies": {}
 }
