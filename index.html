@@ -17,9 +17,9 @@
         <div class="contenedor contenido-header">
             <h1>Rock & EDM Festival</h1>
             <nav class="navegacion-principal">
-                <a href="#">Line Up</a>
-                <a href="#">Galería</a>
-                <a href="#">Boletos</a>
+                <a href="#lineup">Line Up</a>
+                <a href="#galeria">Galería</a>
+                <a href="#boletos">Boletos</a>
             </nav>
         </div>
     </header>
@@ -33,16 +33,16 @@
             </div>
         </div>
         <video autoplay muted loop>
-            <source src="video/concierto.mp4" type="video/mp4">
-            <source src="video/concierto.ogg" type="video/ogg">
-            <source src="video/concierto.webm" type="video/webm">
+            <source srcset="video/concierto.mp4" type="video/mp4">
+            <source srcset="video/concierto.ogg" type="video/ogg">
+            <source srcset="video/concierto.webm" type="video/webm">
         </video>
     </div>
 
     <section class="contenedor sobre-festival">
         <div class="imagen">
             <picture>
-                <source src="build/img/imagen_vocalista.webp" type="image/webp">
+                <source srcset="build/img/imagen_vocalista.webp" type="image/webp">
                 <img loading="lazy" width="200" height="300" src="build/img/imagen_vocalista.jpg"
                     alt="Imagen Vocalista Festival">
                 <picture>
@@ -56,7 +56,7 @@
         </div>
     </section>
 
-    <section class="lineup">
+    <section id='lineup' class="lineup">
         <h3>Line Up</h3>
         <p class="dia">Viernes 21</p>
         <div class="escenarios-contenedor contenedor">
@@ -166,12 +166,55 @@
         </div> <!-- escenarios-contenedor -->
     </section>
 
-    <section class="galeria contenedor">
-        <h3>Galeria</h3>
-        <ul class="galeria-imagenes">
+    <section id="galeria" class="galeria contenedor">
+        <h3>Galería</h3>
 
-        </ul>
+        <ul class="galeria-imagenes"></ul>
     </section>
+
+    <section id='boletos' class="boletos bg-verde">
+        <h3>Boletos</h3>
+        <div class='contenedor contenedor-boletos'>
+            <div class="basico pase">
+                <p class="nombre-pase">Pase 1 día </p>
+                <header class="pase-header">
+                    <p>Incluye</p>
+                </header>
+                <div class="pase-body">
+                    <ul>
+                        <li>Acceso a ambos escenarios</li>
+                        <li>Comida y bebida</li>
+                    </ul>
+                </div>
+                <footer class="pase-footer">
+                    <p>$100</p>
+                </footer>
+            </div>
+            <div class="premium pase">
+                <p class="nombre-pase">Pase 2 días </p>
+                <header class="pase-header">
+                    <p>Incluye</p>
+                </header>
+                <div class="pase-body">
+                    <ul>
+                        <li>Acceso a ambos escenarios</li>
+                        <li>Comida y bebida</li>
+                        <li>Camisa del evento</li>
+                        <li>Acceso VIP</li>
+                    </ul>
+                </div>
+                <footer class="pase-footer">
+                    <p>$180</p>
+                </footer>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <p>Rock & EDM Festival. Todos los derechos Reservados</p>
+    </footer>
+
+    <script src="build/js/app.js"></script>
 
 </body>
 
